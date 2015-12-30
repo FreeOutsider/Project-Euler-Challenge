@@ -11,8 +11,8 @@ main()
   int i;
   int sums;
   sums = 0;
-  
-  for(i=0,i<1000,i++)
+
+  for(i=0;i<1000;i++)
   {
     if((i%3)==0)
     {
@@ -30,9 +30,13 @@ main()
     {
       printf("%d is not divisible by 3 or 5.\n",i);
     }
+    printf("The current sum is %d.\n",sums);
+
+    delay(10000);
   }
    puts("The sums of all the numbers that's divisible by 3 or 5 that's smaller than 1000 is");
     printf("%d",sums);
-    
+
     return 0;
 }
+
